@@ -1,5 +1,6 @@
 import React from 'react';
 import Button, {SelectButton} from "./Button";
+import TodoModal from "./TodoModal";
 
 import styles from '../style/module/app.module.scss'
 
@@ -13,6 +14,7 @@ const TodoHeader = () => {
         <option value='incomplete'>incomplete</option>
         <option value='complete'>complete</option>
       </SelectButton>
+      <TodoModal />
     </div>
   );
 };
