@@ -1,11 +1,9 @@
 import React from 'react';
 
-const TodoTitle = ({children}) => {
-  return (
-    <div>
-        <p>{children}</p>
-    </div>
-  );
+import styles from '../style/module/title.module.scss'
+
+const TodoTitle = ({children, ...rest}) => {
+  return <p className={styles.title}{...rest}>{children}</p>
 };
 
 export default TodoTitle;
