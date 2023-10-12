@@ -16,7 +16,7 @@ const TodoHeader = () => {
         <option value='incomplete'>incomplete</option>
         <option value='complete'>complete</option>
       </SelectButton>
-      <TodoModal modalOpen={modalOpen} setModalOpen={setModalOpen}/>
+      <TodoModal type='add' modalOpen={modalOpen} setModalOpen={setModalOpen}/>
     </div>
   );
 };
