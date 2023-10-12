@@ -13,7 +13,6 @@ const TodoHeader = () => {
   const dispatch = useDispatch();
 
   const updateFilter = (e) => {
-    setFilterStatus(e)
     dispatch(updateFilterStatus(e.target.value))
   }
 
