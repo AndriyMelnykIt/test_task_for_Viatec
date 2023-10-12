@@ -30,7 +30,7 @@ const TodoItem = ({todo}) => {
           []
           <div className={styles.texts}>
             <p className={getClasses([styles.todoText,
-              todo.item === 'complete' && styles['todoText--complete'],
+              todo.status === 'complete' && styles['todoText--completed'],
             ])}>
               {todo.title}
             </p>
@@ -59,6 +59,7 @@ const TodoItem = ({todo}) => {
 
       <TodoModal
         type='update'
+        todo={todo}
         modalOpen={updateModalOpen}
         setModalOpen={setUpdateModalOpen}/>
     </>
