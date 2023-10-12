@@ -10,7 +10,6 @@ import Button from "./Button";
 
 import styles from '../style/module/modal.module.scss'
 
-
 const TodoModal = ({modalOpen, setModalOpen}) => {
   const [title, setTitle] = useState('');
   const [status, setStatus] = useState('incomplete');
