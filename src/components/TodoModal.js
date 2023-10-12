@@ -74,7 +74,6 @@ const TodoModal = ({type, modalOpen, setModalOpen, todo}) => {
           }));
         } else {
           toast.error('No Changes Made')
-          return;
         }
       }
       setModalOpen(false)
@@ -111,9 +110,7 @@ const TodoModal = ({type, modalOpen, setModalOpen, todo}) => {
             </motiondiv>
             <form className={styles.form} onSubmit={e => handleSubmit(e)}>
               <h1 className={styles.formTitle}>
-                {' '}
-                {type === 'update' ? 'Update' : 'Add'}
-                Task
+                {type === 'add' ? 'Add' : 'Update'} TODO
               </h1>
               <label htmlFor="title">
                 Title
@@ -134,8 +131,7 @@ const TodoModal = ({type, modalOpen, setModalOpen, todo}) => {
               </label>
               <div className={styles.buttonContainer}>
                 <Button type='submit' variant='primary'>
-                  {type === 'update' ? 'Update' : 'Add'}
-                  Add Task
+                  {type === 'add' ? 'Add Task' : 'Update Task'}
                 </Button>
                 <Button type='button' variant='secondary'
                         onClick={() => setModalOpen(false)}
