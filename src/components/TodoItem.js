@@ -63,7 +63,7 @@ const TodoItem = ({todo}) => {
             ])}>
               {todo.title}
             </p>
-            <p className={styles.time}>{format(new Date(todo.time), 'p, MM/dd/yyyy')}</p>
+            <p className={styles.time}>{format(new Date(todo.time), 'dd/MM/yyyy')}</p>
           </div>
         </div>
         <div className={styles.todoActions}>
