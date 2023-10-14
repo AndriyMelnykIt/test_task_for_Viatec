@@ -38,7 +38,7 @@ const TodoModal = ({type, modalOpen, setModalOpen, todo}) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (type == 'update' && todo) {
+    if (type === 'update' && todo) {
       setTitle(todo.title);
       setStatus(todo.status);
     } else {

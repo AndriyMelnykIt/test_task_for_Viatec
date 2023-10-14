@@ -18,7 +18,6 @@ const TodoHeader = () => {
 
   return (
     <div className={styles.appHeader}>
-      <h1>Hello</h1>
       <Button variant='primary' onClick={() => setModalOpen(true)}>Add Task</Button>
       <SelectButton id='status' value={filterStatus} onChange={updateFilter}>
         <option value='all'>all</option>
